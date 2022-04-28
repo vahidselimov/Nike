@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header-top {
+  height: 40px;
+  background-color: whitesmoke;
+}
+
+header .header-top .container {
+  height: 100%;
+}
+
+header .header-top .container .row {
+  height: 100%;
+}
+
+header .header-top .container ul {
+  margin: 0 !important;
+}
+
+header .header-top .container ul li a:hover {
+  color: #2f2a2a;
+}
+
+header .header-top .container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+header .header-top .registration ul li:not(:last-child)::after {
+  content: "|";
+  position: relative;
+  left: 7px;
+}
+
+.header-bottom .container .row ul {
+  margin: 0;
+}
+
+.header-bottom .container .row .search-basket .search {
+  position: relative;
+}
+
+.header-bottom .container .row .search-basket .search .icon-search {
+  position: absolute;
+  left: 20px;
+  top:auto;
+
+}
+
+.header-bottom .container .row .search-basket .search .icon-search i {
+  width: 60px;
+}
+
+.header-bottom .container .row .search-basket .search input {
+  border-radius: 18px;
+}
+
+.header-bottom .container .row .search-basket .basket-wish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-bottom .container .row .search-basket .basket-wish ul {
+  width: 90px;
+}
+
+.header-bottom .container .row .search-basket .basket-wish ul li i {
+  font-size: 22px;
+  color: black;
+}
+
+.basket-wish ul li:nth-child(3) {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-top, .search input, .basket-wish ul li:nth-child(1), .nav-links {
+    display: none;
+  }
+  .basket-wish ul li:nth-child(3) {
+    display: block;
+  }
+}
+/*# sourceMappingURL=nike.css.map */

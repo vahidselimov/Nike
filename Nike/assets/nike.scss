@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  .header-top{
+      height: 40px;
+      background-color:  whitesmoke;
+      .container{
+          height: 100%;
+          .row{
+              height: 100%;
+          }
+          ul{
+              margin: 0 !important;
+              li {
+                a:hover {
+                  color: rgb(47, 42, 42);
+                }
+              }
+              li {
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 12px;
+                }
+              }
+            } 
+          }
+          .registration{
+              ul{
+                  
+                  li:not(:last-child){
+                      &::after{
+                           content: "|";
+                           position: relative;
+                           left: 7px;
+                      }
+                  }
+              }
+          }
+      }
+    
+  }
+.header-bottom {
+      .container {
+        .row {
+          ul {
+            margin: 0;
+          }
+          .search-basket {
+            .search {
+              .icon-search{
+                position: absolute;
+              left: 20px;
+                
+                i{
+                  border: -20px;
+                  width: 60px;
+                }
+                
+                
+            }
+              position: relative;
+              input {
+                border-radius: 18px;
+              }
+              
+            }
+            .basket-wish {
+              display: flex;
+              align-items: center;
+              ul {
+                width: 90px;
+                li {
+                  i {
+                    font-size: 22px;
+                    color: black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .basket-wish ul li:nth-child(3){
+      display: none;
+      }
+      
+      @media only screen and (max-width:768px) {
+        .header-top ,.search input ,.basket-wish ul li:nth-child(1),.nav-links{
+          display: none;
+        }
+        .basket-wish ul li:nth-child(3){
+          display: block;
+          }
+      }
+
+
